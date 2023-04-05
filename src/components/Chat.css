@@ -1,0 +1,130 @@
+.chat {
+    flex: 0.7;
+    flex-grow: 1;
+    overflow-y: scroll;
+    padding-bottom: 150x;
+    
+}
+
+.chat_headerLeft{
+  margin-top: 60px;
+  margin-left: 250px;
+}
+
+.sidebarright {
+  position: fixed;
+  top: 190;
+  right: -300px; /* Start the sidebar off-screen */
+  width: 180px;
+  height: 100%;
+  background-color:  #49274b;
+  transition: all 0.3s ease-in-out;
+   /* Add a smooth transition effect */
+}
+
+.sidebarright.active {
+  right: 0; /* Move the sidebar into view */
+}
+
+.chat_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+.chat_channelName {
+    display: flex;
+    text-transform: lowercase;
+    
+}
+
+.chat_channelName > .MuiSvgIcon-root {
+    margin-right: 5px !important;
+    align-items: center;
+    font-size: 16px;
+}
+
+/* .chat_headerRight > p {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.chat_headerRight > p > svg {
+    margin-right: 5px !important;
+    align-items: center;
+    font-size: 16px;
+    } */
+    .chat_headerRight {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      margin-top: 45px;
+      cursor: pointer;
+    }
+    
+    .headerRightContainer {
+      display: flex;
+      align-items: center;
+    }
+    
+    .headerRightContainer > svg {
+      margin-right: 5px;
+      font-size: 16px;
+    }
+
+.chat__messages {
+    height: 530px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 250px;
+    margin-right: 5px;
+  }
+  
+  /* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 5px grey; */
+    border-radius: 5px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #3f0f40;
+    border-radius: 10px;
+  }
+
+
+  /*button*/
+.nice {
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 6px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 60px;
+  word-break: break-word;
+  border: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+}
